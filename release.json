@@ -1,0 +1,33 @@
+{
+  "version": "0.1.12",
+  "date": "2026-11-13",
+  "requires_original": true,
+  "builds": {
+    "windows": {
+      "file": "ToonCar-windows-x86_64.zip",
+      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.12/ToonCar-windows-x86_64.zip",
+      "bytes": 16279648,
+      "sha256": "91ee638a07de44157433c3dd37fe0378faf06da48266c8817d64290d7f5cac05"
+    },
+    "linux": {
+      "file": "ToonCar-linux-x86_64.tar.gz",
+      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.12/ToonCar-linux-x86_64.tar.gz",
+      "bytes": 12259140,
+      "sha256": "1ccbf189598803b4660fd8d05290683a7be06bb213c9914e4a4472e615d79f64"
+    },
+    "textures": {
+      "file": "ToonCar-textures-4x.zip",
+      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.12/ToonCar-textures-4x.zip",
+      "bytes": 284659124,
+      "sha256": "9ea7a2dbf14a6d0500b54b325ca3d141ac046902bed3f71d3ed95a523142a9d1"
+    },
+    "android": {
+      "file": "ToonCar-android-arm64.apk",
+      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.12/ToonCar-android-arm64.apk",
+      "bytes": 13092021,
+      "sha256": "16937ac519beef263225865474f7b7f3752fea660f0b7f81a4226e353f4d298d"
+    }
+  },
+  "repository": "pangadula/tooncar-remake",
+  "tag": "v0.1.12"
+}

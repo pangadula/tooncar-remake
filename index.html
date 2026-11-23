@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#192139">
+  <meta name="description" content="ToonCar Remake. Fanowska wersja na Windows i Linux oraz opcjonalne tekstury 4×. Pobierz, wskaż oryginalną grę i ruszaj na trasę.">
+  <meta property="og:title" content="ToonCar Remake: pobierz grę">
+  <meta property="og:description" content="ToonCar wiecznie żywy. Windows, Linux i opcjonalne tekstury 4×. Wymagana oryginalna gra.">
+  <meta property="og:type" content="website">
+  <title>ToonCar Remake: pobierz grę</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="#" aria-label="ToonCar Remake, strona główna">
+        <img src="assets/tooncar-logo.png" width="256" height="256" alt="ToonCar">
+        <span>TOONCAR REMAKE<small>PROJEKT FANOWSKI</small></span>
+      </a>
+      <p class="release">Wersja 0.1.12<time datetime="2026-11-13">13 listopada 2026</time></p>
+    </header>
+
+    <main id="main">
+      <div class="main-grid">
+        <section class="intro" aria-labelledby="hero-title">
+          <h1 id="hero-title">ToonCar<br> <span>wiecznie żywy</span></h1>
+          <p class="description">ToonCar na współczesne komputery. Znajome postacie i trasy, klasyczna lub ulepszona grafika. Ty wybierasz.</p>
+          <figure class="screenshot">
+            <img id="game-screenshot" src="assets/atolon.png" width="1280" height="720" alt="Wyścig na drewnianym moście w tropikalnym Atolonie" fetchpriority="high">
+            <figcaption>Atolon · zrzut z natywnej wersji gry <span aria-hidden="true">↗</span></figcaption>
+          </figure>
+        </section>
+
+        <section class="downloads" id="pobierz" aria-labelledby="download-title">
+          <div class="download-heading"><h2 id="download-title">Pobierz i jedź.</h2><span aria-hidden="true">↘</span></div>
+          <p class="original-note">Wymagana własna instalacja <strong>ToonCara PL z 2001 r.</strong> Masz też <strong>Odjazdowy Rajd</strong>? Dodasz jego trasy i Mikołaja.</p>
+          <article class="download-card" id="download-windows">
+            <div class="card-heading"><h3>Windows</h3><span class="system-match" hidden>Twój system</span><span class="file-size">16,3 MB</span></div>
+            <p class="requirements">Windows 10 / 11 · x64 · ZIP</p>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.12/ToonCar-windows-x86_64.zip" download>Pobierz na Windows <span aria-hidden="true">↓</span></a>
+          </article>
+          <article class="download-card" id="download-linux">
+            <div class="card-heading"><h3>Linux</h3><span class="system-match" hidden>Twój system</span><span class="file-size">12,3 MB</span></div>
+            <p class="requirements">x86_64 · TAR.GZ · <a href="#wymagania">glibc 2.39+</a></p>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.12/ToonCar-linux-x86_64.tar.gz" download>Pobierz na Linux <span aria-hidden="true">↓</span></a>
+          </article>
+          <article class="download-card preview" id="download-android">
+            <div class="card-heading"><h3>Android</h3><span class="preview-badge">Wersja testowa</span><span class="system-match" hidden>Twój system</span><span class="file-size">13,1 MB</span></div>
+            <p class="requirements">Android 8.0+ · ARM64 · APK</p>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.12/ToonCar-android-arm64.apk" download>Pobierz na Androida <span aria-hidden="true">↓</span></a>
+          </article>
+          <aside class="texture-card" aria-label="Opcjonalne tekstury 4×">
+            <div><h3>Tekstury 4×</h3><p>Opcjonalnie · oba systemy · 284,7 MB</p></div>
+            <a class="texture-download file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.12/ToonCar-textures-4x.zip" download aria-label="Pobierz tekstury 4×">Pobierz <span aria-hidden="true">↓</span></a>
+          </aside>
+        </section>
+      </div>
+
+      <section class="setup" aria-labelledby="setup-title">
+        <h2 id="setup-title">Jak zacząć?</h2>
+        <ol><li><span>01</span> Rozpakuj paczkę.</li><li><span>02</span> Uruchom i wskaż oryginalną grę.</li><li><span>03</span> Wybierz ustawienia i ruszaj!</li></ol>
+      </section>
+      <section class="guide" id="instrukcja" aria-labelledby="guide-title">
+        <h2 id="guide-title">Instrukcja</h2>
+        <div class="tabs" role="tablist" aria-label="Instrukcja" hidden>
+          <button type="button" role="tab" id="tab-start" aria-controls="start">Pierwszy start</button>
+          <button type="button" role="tab" id="tab-rajd" aria-controls="rajd">Odjazdowy Rajd</button>
+          <button type="button" role="tab" id="tab-tekstury" aria-controls="tekstury">Tekstury 4×</button>
+          <button type="button" role="tab" id="tab-online" aria-controls="online">Gra wspólna</button>
+          <button type="button" role="tab" id="tab-wymagania" aria-controls="wymagania">Wymagania i zapisy</button>
+        </div>
+        <div class="panel" id="start" role="tabpanel" aria-labelledby="tab-start">
+          <h3>Pierwszy start</h3>
+          <ul>
+            <li>Uruchom <code>ToonCar.exe</code> na Windows lub <code>ToonCar</code> na Linuksie.</li>
+            <li>Wskaż folder oryginalnej gry z <code>ToonCar.exe</code> i <code>RData</code>.</li>
+            <li>Import wymaga ok. 1,6 GB wolnego miejsca i może potrwać kilka minut. Oryginalne pliki pozostają bez zmian.</li>
+          </ul>
+        </div>
+        <div class="panel" id="rajd" role="tabpanel" aria-labelledby="tab-rajd">
+          <h3>Odjazdowy Rajd (opcjonalnie)</h3>
+          <ul>
+            <li>Masz też Odjazdowy Rajd? W oknie importu wskaż drugą grę: zainstalowany folder, kopię płyty z <code>SETUP.cab</code> albo obraz <code>.iso</code>.</li>
+            <li>Dochodzi 7 nowych tras (każda także odwrócona), Mikołaj, mistrzostwa i licencje Rajdu. Import potrzebuje wtedy ok. 2,4 GB.</li>
+            <li>Rajd możesz dodać później przyciskiem <strong>Dodaj Odjazdowy Rajd</strong> w launcherze. Przycisk <strong>Gra</strong> przełącza gry, a każda ma własny postęp.</li>
+            <li>Do gry wystarczy sam ToonCar.</li>
+          </ul>
+        </div>
+        <div class="panel" id="tekstury" role="tabpanel" aria-labelledby="tab-tekstury">
+          <h3>Opcjonalne tekstury 4×</h3>
+          <ul>
+            <li>Rozpakuj dodatek wewnątrz paczki gry: folder <code>texture-pack</code> powinien leżeć obok programu <code>ToonCar</code> lub <code>ToonCar.exe</code>.</li>
+            <li>Uruchom grę ponownie i w launcherze wybierz <strong>Grafika → Tekstury → Upscale 4×</strong>.</li>
+          </ul>
+        </div>
+        <div class="panel" id="online" role="tabpanel" aria-labelledby="tab-online">
+          <h3>Gra wspólna</h3>
+          <ul>
+            <li><strong>Na jednym komputerze:</strong> do 4 osób. Ustaw liczbę graczy w launcherze, a w grze wybierz <strong>Multiplayer → Na jednym komputerze</strong>.</li>
+            <li><strong>Przez Steam (najprościej):</strong> włącz Steam przed uruchomieniem gry. W grze wybierz <strong>Multiplayer → Steam: utwórz pokój</strong>, a potem <strong>Zaproś znajomych przez Steam</strong>. Otworzy się okienko Steam, w którym zapraszasz znajomego.</li>
+            <li>Znajomy uruchamia grę i wybiera <strong>Multiplayer → Steam: dołącz do znajomego</strong>, a potem Twój pokój z listy. Jeśli ma już włączoną grę, wystarczy, że przyjmie zaproszenie w Steam.</li>
+            <li>Zwykle nie trzeba niczego ustawiać. Jeśli okienko Steam się nie pojawia, dodaj ToonCara w Steam jako grę spoza Steam i uruchamiaj go stamtąd. Znajomi zobaczą w Steam, że grasz w „Spacewar”. To normalne, gra korzysta z testowego identyfikatora Steam.</li>
+            <li><strong>Bez Steam, po IP:</strong> host wybiera <strong>Sieć / IP: utwórz pokój</strong> i podaje innym adres widoczny na ekranie. Pozostali wybierają <strong>Sieć / IP: dołącz</strong> i wpisują ten adres. W jednej sieci domowej działa od razu. Przez Internet host musi przekierować na routerze port TCP 23055.</li>
+            <li>Online gra do 8 osób, wolne miejsca zajmuje AI. Arena działa także online: grają same osoby, potrzeba co najmniej dwóch.</li>
+            <li><strong>Wszyscy gracze muszą mieć wersję 0.1.12; starsze paczki się nie połączą.</strong> Pokój z trasą Odjazdowego Rajdu wymaga Rajdu u każdego gracza.</li>
+          </ul>
+        </div>
+        <div class="panel" id="wymagania" role="tabpanel" aria-labelledby="tab-wymagania">
+          <h3>Wymagania i zapisy</h3>
+          <ul>
+            <li>Linux wymaga glibc 2.39+, np. Ubuntu/Pop!_OS 24.04. To biblioteka dostarczana z systemem; nie podmieniaj jej ręcznie.</li>
+            <li>Paczkę Windows testowano pod Wine.</li>
+            <li>Nowy profil zaczyna od zera: trasy i auta trzeba odblokować.</li>
+            <li>Zapisy i logi: <code>%LOCALAPPDATA%\ToonCarRemaster</code> (Windows) lub <code>~/.local/share/tooncar-remaster</code> (Linux, także <code>$XDG_DATA_HOME</code>).</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>Fanowski projekt odtworzenia gry. ToonCar i oryginalne materiały należą do ich właścicieli.</footer>
+  </div>
+</body>
+</html>
