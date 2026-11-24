@@ -1,33 +1,33 @@
 {
-  "version": "0.1.13",
-  "date": "2026-11-23",
+  "version": "0.1.14",
+  "date": "2026-11-24",
   "requires_original": true,
   "builds": {
     "windows": {
       "file": "ToonCar-windows-x86_64.zip",
-      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.13/ToonCar-windows-x86_64.zip",
-      "bytes": 16279312,
-      "sha256": "fd0197848680160808743bc1b6cec8b2b0cad91221863bb3085be2593caf8cf6"
+      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.14/ToonCar-windows-x86_64.zip",
+      "bytes": 16298217,
+      "sha256": "da045293b31ae421a064168e77488b64ef4e6272e7373abbd01763696ef482bf"
     },
     "linux": {
       "file": "ToonCar-linux-x86_64.tar.gz",
-      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.13/ToonCar-linux-x86_64.tar.gz",
-      "bytes": 12260907,
-      "sha256": "b8e41c6912d985f3da9be233278c4ccae93805ad19038c46c7ba3900661612b0"
+      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.14/ToonCar-linux-x86_64.tar.gz",
+      "bytes": 12280650,
+      "sha256": "e1356bf6f7badd50b0c17a4a0902d8cdc92f4896717104bf82be5ca05ac9ce51"
     },
     "textures": {
       "file": "ToonCar-textures-4x.zip",
-      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.13/ToonCar-textures-4x.zip",
+      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.14/ToonCar-textures-4x.zip",
       "bytes": 284659124,
       "sha256": "9ea7a2dbf14a6d0500b54b325ca3d141ac046902bed3f71d3ed95a523142a9d1"
     },
     "android": {
       "file": "ToonCar-android-arm64.apk",
-      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.13/ToonCar-android-arm64.apk",
-      "bytes": 13092021,
-      "sha256": "125670023d1325ceff5b61f4dcf9868ae574537ec9ccc7592fb00596fdb87bcd"
+      "url": "https://github.com/pangadula/tooncar-remake/releases/download/v0.1.14/ToonCar-android-arm64.apk",
+      "bytes": 13128885,
+      "sha256": "99adac80fc5fa9837a055ed316d4c85d7fc9e8541a6a7cc17946c0c70b1e95d1"
     }
   },
   "repository": "pangadula/tooncar-remake",
-  "tag": "v0.1.13"
+  "tag": "v0.1.14"
 }
