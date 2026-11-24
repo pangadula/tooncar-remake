@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#192139">
+  <meta name="description" content="ToonCar Remake. A fan-made version for Windows, Linux and Android with optional 4× textures. Download it, point it at your original game and hit the track.">
+  <meta property="og:title" content="ToonCar Remake: download the game">
+  <meta property="og:description" content="ToonCar lives on. Windows, Linux, Android and optional 4× textures. Requires the original game.">
+  <meta property="og:type" content="website">
+  <title>ToonCar Remake: download the game</title>
+  <link rel="alternate" hreflang="pl" href="../">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="header">
+      <a class="brand" href="./" aria-label="ToonCar Remake, home page">
+        <img src="../assets/tooncar-logo.png" width="256" height="256" alt="ToonCar">
+        <span>TOONCAR REMAKE<small>FAN PROJECT</small></span>
+      </a>
+      <a class="lang-switch" href="../" hreflang="pl" lang="pl" data-lang="pl">Polski</a>
+      <p class="release">Version 0.1.16<time datetime="2026-11-24">November 24, 2026</time></p>
+    </header>
+
+    <main id="main">
+      <div class="main-grid">
+        <section class="intro" aria-labelledby="hero-title">
+          <h1 id="hero-title">ToonCar<br> <span>lives on</span></h1>
+          <p class="description">ToonCar on today's computers. Familiar characters and tracks, classic or enhanced graphics. Your choice.</p>
+          <figure class="screenshot">
+            <img id="game-screenshot" src="../assets/atolon.png" width="1280" height="720" alt="A race on the wooden bridge of tropical Atolon" fetchpriority="high">
+            <figcaption>Atolon · screenshot of the native version <span aria-hidden="true">↗</span></figcaption>
+          </figure>
+        </section>
+
+        <section class="downloads" id="download" aria-labelledby="download-title">
+          <div class="download-heading"><h2 id="download-title">Download and drive.</h2><span aria-hidden="true">↘</span></div>
+          <p class="original-note">Requires your own copy of the <strong>Polish ToonCar (2001)</strong>. Got <strong>Toon Quad</strong> (the Polish Odjazdowy Rajd) too? Add its tracks and Santa.</p>
+          <article class="download-card" id="download-windows">
+            <div class="card-heading"><h3>Windows</h3><span class="system-match" hidden>Your system</span><span class="file-size">16.4 MB</span></div>
+            <p class="requirements">Windows 10 / 11 · x64 · ZIP</p>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.16/ToonCar-windows-x86_64.zip" download>Download for Windows <span aria-hidden="true">↓</span></a>
+          </article>
+          <article class="download-card" id="download-linux">
+            <div class="card-heading"><h3>Linux</h3><span class="system-match" hidden>Your system</span><span class="file-size">12.3 MB</span></div>
+            <p class="requirements">x86_64 · TAR.GZ · <a href="#requirements">glibc 2.39+</a></p>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.16/ToonCar-linux-x86_64.tar.gz" download>Download for Linux <span aria-hidden="true">↓</span></a>
+          </article>
+          <article class="download-card preview" id="download-android">
+            <div class="card-heading"><h3>Android</h3><span class="preview-badge">Test version</span><span class="system-match" hidden>Your system</span><span class="file-size">13.2 MB</span></div>
+            <p class="requirements">Android 8.0+ · ARM64 · APK</p>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.16/ToonCar-android-arm64.apk" download>Download for Android <span aria-hidden="true">↓</span></a>
+          </article>
+          <aside class="texture-card" aria-label="Optional 4× textures">
+            <div><h3>4× textures</h3><p>Optional · all computers · 284.7 MB</p></div>
+            <a class="texture-download file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.16/ToonCar-textures-4x.zip" download aria-label="Download the 4× textures">Download <span aria-hidden="true">↓</span></a>
+          </aside>
+        </section>
+      </div>
+
+      <section class="setup" aria-labelledby="setup-title">
+        <h2 id="setup-title">How to start?</h2>
+        <ol><li><span>01</span> Unpack the download.</li><li><span>02</span> Run it and choose the original game.</li><li><span>03</span> Pick your settings and go!</li></ol>
+      </section>
+      <section class="guide" id="guide" aria-labelledby="guide-title">
+        <h2 id="guide-title">Guide</h2>
+        <div class="tabs" role="tablist" aria-label="Guide" hidden>
+          <button type="button" role="tab" id="tab-start" aria-controls="start">First start</button>
+          <button type="button" role="tab" id="tab-rajd" aria-controls="odjazdowy">Toon Quad</button>
+          <button type="button" role="tab" id="tab-textures" aria-controls="textures">4× textures</button>
+          <button type="button" role="tab" id="tab-online" aria-controls="online">Playing together</button>
+          <button type="button" role="tab" id="tab-requirements" aria-controls="requirements">Requirements and saves</button>
+        </div>
+        <div class="panel" id="start" role="tabpanel" aria-labelledby="tab-start">
+          <h3>First start</h3>
+          <ul>
+            <li>Run <code>ToonCar.exe</code> on Windows or <code>ToonCar</code> on Linux.</li>
+            <li>Choose the folder of the original game with <code>ToonCar.exe</code> and <code>RData</code>. Only the Polish 2001 edition is supported.</li>
+            <li>The import needs about 1.6 GB of free space and can take a few minutes. The original files stay unchanged.</li>
+            <li>The launcher, the import window and the online menu are in English or Polish: pick a flag in the launcher. The game's own menus show the texts of your copy, which is Polish.</li>
+          </ul>
+        </div>
+        <div class="panel" id="odjazdowy" role="tabpanel" aria-labelledby="tab-rajd">
+          <h3>Toon Quad (optional)</h3>
+          <ul>
+            <li>Got Toon Quad too? Only its Polish edition, <em>Odjazdowy Rajd</em> (2003), is supported. In the import window choose the second game as well: its installed folder, a copy of the CD with <code>SETUP.cab</code> or an <code>.iso</code> image.</li>
+            <li>It adds 7 new tracks (each one also reversed), Santa, and Toon Quad's championships and licences. The import then needs about 2.4 GB.</li>
+            <li>You can add it later with <strong>Add Toon Quad</strong> in the launcher. The <strong>Game</strong> button switches between the two games, and each keeps its own progress.</li>
+            <li>ToonCar alone is enough to play.</li>
+          </ul>
+        </div>
+        <div class="panel" id="textures" role="tabpanel" aria-labelledby="tab-textures">
+          <h3>Optional 4× textures</h3>
+          <ul>
+            <li>Unpack the add-on inside the game's folder: the <code>texture-pack</code> folder should sit next to <code>ToonCar</code> or <code>ToonCar.exe</code>.</li>
+            <li>Start the game again and in the launcher choose <strong>Graphics → Textures → Upscaled 4×</strong>.</li>
+          </ul>
+        </div>
+        <div class="panel" id="online" role="tabpanel" aria-labelledby="tab-online">
+          <h3>Playing together</h3>
+          <ul>
+            <li><strong>On one computer:</strong> up to 4 people. Set the number of players in the launcher, then in the game choose <strong>Multiplayer → On one computer</strong>.</li>
+            <li><strong>Through Steam (the easiest):</strong> start Steam before the game. In the game choose <strong>Multiplayer → Steam: create a room</strong>, then <strong>Invite friends through Steam</strong>. A Steam window opens where you invite a friend.</li>
+            <li>Your friend starts the game and chooses <strong>Multiplayer → Steam: join a friend</strong>, then your room from the list. If the game is already running, accepting the invite in Steam is enough.</li>
+            <li>Usually there is nothing to set up. If the Steam window does not appear, add ToonCar to Steam as a non-Steam game and start it from there. Friends will see you playing “Spacewar”. That is normal: the game uses Steam's test ID.</li>
+            <li><strong>Without Steam, by IP:</strong> the host chooses <strong>Network / IP: create a room</strong> and tells the others the address shown on screen. They choose <strong>Network / IP: join</strong> and type that address. On a home network it works right away. Over the Internet the host must forward TCP port 23055 on the router.</li>
+            <li>Online races take up to 8 people, AI fills the free places. The Arena works online too: people only, at least two.</li>
+            <li><strong>Everything is unlocked online:</strong> every track and every car, including those you have not earned in single player yet. Your progress stays as it is.</li>
+            <li><strong>Keep playing without reconnecting:</strong> after a race everyone returns to the room, confirms they are ready and you are off again. The host can change the track and the number of laps in the room.</li>
+            <li><strong>Every player needs version 0.1.12 or newer; older downloads will not connect.</strong> A room with a Toon Quad track needs Toon Quad for every player.</li>
+          </ul>
+        </div>
+        <div class="panel" id="requirements" role="tabpanel" aria-labelledby="tab-requirements">
+          <h3>Requirements and saves</h3>
+          <ul>
+            <li>Linux needs glibc 2.39+, for example Ubuntu/Pop!_OS 24.04. It comes with the system; do not replace it by hand.</li>
+            <li>The Windows download was tested under Wine.</li>
+            <li>Updates: the launcher checks GitHub for a newer version at start and installs it with one click. You can turn this off in the launcher's <strong>General</strong> tab.</li>
+            <li>A new profile starts from zero: tracks and cars have to be unlocked.</li>
+            <li>Saves and logs: <code>%LOCALAPPDATA%\ToonCarRemaster</code> (Windows) or <code>~/.local/share/tooncar-remaster</code> (Linux, also <code>$XDG_DATA_HOME</code>).</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>A fan project recreating the game. ToonCar and the original material belong to their owners.</footer>
+  </div>
+</body>
+</html>

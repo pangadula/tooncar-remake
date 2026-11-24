@@ -1,5 +1,20 @@
 "use strict";
 
+// Language: a visitor whose browser is not Polish starts on the English page,
+// once; the switch in the header remembers an explicit choice.
+const pageLanguage = document.documentElement.lang;
+let chosen = null;
+try { chosen = localStorage.getItem("tooncar-language"); } catch { /* storage may be blocked */ }
+for (const link of document.querySelectorAll(".lang-switch")) {
+  link.addEventListener("click", () => {
+    try { localStorage.setItem("tooncar-language", link.dataset.lang); } catch { /* ignore */ }
+  });
+}
+const browserPolish = (navigator.languages || [navigator.language || ""]).some(l => /^pl\b/i.test(l));
+if (!chosen && pageLanguage === "pl" && !browserPolish && navigator.language) {
+  window.location.replace("en/" + window.location.hash);
+}
+
 // File links and instructions remain usable without JavaScript.
 const platform = navigator.userAgentData?.platform || navigator.platform || "";
 const os = /android/i.test(platform + navigator.userAgent) ? "android" : /win/i.test(platform) ? "windows" : /linux/i.test(platform) ? "linux" : null;
@@ -8,7 +23,7 @@ if (os) {
 }
 
 // Instructions: tabs with JavaScript, every section one below another without it.
-const guide = document.querySelector("#instrukcja");
+const guide = document.querySelector(".guide");
 const tabs = [...guide.querySelectorAll('[role="tab"]')];
 const panels = tabs.map(tab => document.getElementById(tab.getAttribute("aria-controls")));
 

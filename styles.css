@@ -19,3 +19,9 @@ body{background-image:conic-gradient(var(--ink) 25%,var(--paper) 0 50%,var(--ink
 .panel{background:var(--paper);border:1.5px solid var(--ink);border-radius:7px;box-shadow:3px 3px 0 rgb(25 33 57 / .13);padding:18px 24px;margin-bottom:12px}.panel h3{font-size:15px;margin-bottom:8px}.tabbed .panel h3{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 .panel ul{margin:0;padding-left:18px;max-width:780px}.panel li{font-size:13px;line-height:1.7;margin:5px 0}.panel li::marker{color:var(--blue)}
 @media(max-width:700px){.guide>h2{font-size:20px}.tabs button{font-size:11px;padding:6px 11px}.panel{padding:15px 17px}.panel li{font-size:12px}}
+
+/* Language switch in the header. */
+.lang-switch{margin-left:auto;margin-right:22px;color:var(--yellow);font-size:12px;font-weight:700;text-decoration:none;border:1.5px solid rgb(255 212 59 / .55);border-radius:999px;padding:5px 12px;line-height:1}
+.lang-switch:hover{background:rgb(255 212 59 / .12)}
+.lang-switch:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+@media(max-width:700px){.lang-switch{margin-right:12px;font-size:11px;padding:4px 9px}}

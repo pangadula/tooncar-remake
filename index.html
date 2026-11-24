@@ -9,6 +9,8 @@
   <meta property="og:description" content="ToonCar wiecznie żywy. Windows, Linux i opcjonalne tekstury 4×. Wymagana oryginalna gra.">
   <meta property="og:type" content="website">
   <title>ToonCar Remake: pobierz grę</title>
+  <link rel="alternate" hreflang="pl" href="./">
+  <link rel="alternate" hreflang="en" href="en/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
@@ -21,7 +23,8 @@
         <img src="assets/tooncar-logo.png" width="256" height="256" alt="ToonCar">
         <span>TOONCAR REMAKE<small>PROJEKT FANOWSKI</small></span>
       </a>
-      <p class="release">Wersja 0.1.15<time datetime="2026-11-24">24 listopada 2026</time></p>
+      <a class="lang-switch" href="en/" hreflang="en" lang="en" data-lang="en">English</a>
+      <p class="release">Wersja 0.1.16<time datetime="2026-11-24">24 listopada 2026</time></p>
     </header>
 
     <main id="main">
@@ -39,23 +42,23 @@
           <div class="download-heading"><h2 id="download-title">Pobierz i jedź.</h2><span aria-hidden="true">↘</span></div>
           <p class="original-note">Wymagana własna instalacja <strong>ToonCara PL z 2001 r.</strong> Masz też <strong>Odjazdowy Rajd</strong>? Dodasz jego trasy i Mikołaja.</p>
           <article class="download-card" id="download-windows">
-            <div class="card-heading"><h3>Windows</h3><span class="system-match" hidden>Twój system</span><span class="file-size">16,3 MB</span></div>
+            <div class="card-heading"><h3>Windows</h3><span class="system-match" hidden>Twój system</span><span class="file-size">16,4 MB</span></div>
             <p class="requirements">Windows 10 / 11 · x64 · ZIP</p>
-            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.15/ToonCar-windows-x86_64.zip" download>Pobierz na Windows <span aria-hidden="true">↓</span></a>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.16/ToonCar-windows-x86_64.zip" download>Pobierz na Windows <span aria-hidden="true">↓</span></a>
           </article>
           <article class="download-card" id="download-linux">
             <div class="card-heading"><h3>Linux</h3><span class="system-match" hidden>Twój system</span><span class="file-size">12,3 MB</span></div>
             <p class="requirements">x86_64 · TAR.GZ · <a href="#wymagania">glibc 2.39+</a></p>
-            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.15/ToonCar-linux-x86_64.tar.gz" download>Pobierz na Linux <span aria-hidden="true">↓</span></a>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.16/ToonCar-linux-x86_64.tar.gz" download>Pobierz na Linux <span aria-hidden="true">↓</span></a>
           </article>
           <article class="download-card preview" id="download-android">
             <div class="card-heading"><h3>Android</h3><span class="preview-badge">Wersja testowa</span><span class="system-match" hidden>Twój system</span><span class="file-size">13,2 MB</span></div>
             <p class="requirements">Android 8.0+ · ARM64 · APK</p>
-            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.15/ToonCar-android-arm64.apk" download>Pobierz na Androida <span aria-hidden="true">↓</span></a>
+            <a class="button file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.16/ToonCar-android-arm64.apk" download>Pobierz na Androida <span aria-hidden="true">↓</span></a>
           </article>
           <aside class="texture-card" aria-label="Opcjonalne tekstury 4×">
             <div><h3>Tekstury 4×</h3><p>Opcjonalnie · oba systemy · 284,7 MB</p></div>
-            <a class="texture-download file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.15/ToonCar-textures-4x.zip" download aria-label="Pobierz tekstury 4×">Pobierz <span aria-hidden="true">↓</span></a>
+            <a class="texture-download file-download" href="https://github.com/pangadula/tooncar-remake/releases/download/v0.1.16/ToonCar-textures-4x.zip" download aria-label="Pobierz tekstury 4×">Pobierz <span aria-hidden="true">↓</span></a>
           </aside>
         </section>
       </div>
@@ -79,6 +82,7 @@
             <li>Uruchom <code>ToonCar.exe</code> na Windows lub <code>ToonCar</code> na Linuksie.</li>
             <li>Wskaż folder oryginalnej gry z <code>ToonCar.exe</code> i <code>RData</code>.</li>
             <li>Import wymaga ok. 1,6 GB wolnego miejsca i może potrwać kilka minut. Oryginalne pliki pozostają bez zmian.</li>
+            <li>Launcher, okno importu i menu online są po polsku lub angielsku: wybierz flagę w launcherze.</li>
           </ul>
         </div>
         <div class="panel" id="rajd" role="tabpanel" aria-labelledby="tab-rajd">
@@ -116,6 +120,7 @@
           <ul>
             <li>Linux wymaga glibc 2.39+, np. Ubuntu/Pop!_OS 24.04. To biblioteka dostarczana z systemem; nie podmieniaj jej ręcznie.</li>
             <li>Paczkę Windows testowano pod Wine.</li>
+            <li>Aktualizacje: przy starcie launcher sprawdza na GitHubie, czy jest nowsza wersja, i instaluje ją jednym kliknięciem. Możesz to wyłączyć w launcherze, w zakładce <strong>Ogólne</strong>.</li>
             <li>Nowy profil zaczyna od zera: trasy i auta trzeba odblokować.</li>
             <li>Zapisy i logi: <code>%LOCALAPPDATA%\ToonCarRemaster</code> (Windows) lub <code>~/.local/share/tooncar-remaster</code> (Linux, także <code>$XDG_DATA_HOME</code>).</li>
           </ul>
